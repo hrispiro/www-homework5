@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE web-app
+ PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd"> -->
+<web-app>
+<listener>
+ <listener-class>Listener.ConcurrentUserTracker</listener-class>
+</listener>
+ <servlet>
+  <servlet-name>Upload</servlet-name>
+  <servlet-class>PicUpload</servlet-class>
+ </servlet>
+  <servlet>
+  <servlet-name>LoginPage</servlet-name>
+  <servlet-class>Login</servlet-class>
+ </servlet>
+<servlet>
+  <servlet-name>Gridview</servlet-name>
+  <servlet-class>PicGrid</servlet-class>
+ </servlet>
+<servlet>
+  <servlet-name>xmlUpload</servlet-name>
+  <servlet-class>xmlUpload</servlet-class>
+ </servlet>
+<servlet>
+  <servlet-name>xmlEdit</servlet-name>
+  <servlet-class>xmlEdit</servlet-class>
+ </servlet>
+   <servlet-mapping>
+ <servlet-name>Upload</servlet-name>
+ <url-pattern>/PicUpload</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+ <servlet-name>LoginPage</servlet-name>
+ <url-pattern>/Login</url-pattern>
+ </servlet-mapping>
+<servlet-mapping>
+ <servlet-name>Gridview</servlet-name>
+ <url-pattern>/PicGrid</url-pattern>
+ </servlet-mapping>
+<servlet-mapping>
+ <servlet-name>xmlUpload</servlet-name>
+ <url-pattern>/xmlUpload</url-pattern>
+ </servlet-mapping>
+<servlet-mapping>
+ <servlet-name>xmlEdit</servlet-name>
+ <url-pattern>/xmlEdit</url-pattern>
+ </servlet-mapping>
+</web-app>
